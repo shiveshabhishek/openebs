@@ -320,7 +320,7 @@ Command:
   Consistency Level: LOCAL_ONE
   Target Uncertainty: not applicable
   Key Size (bytes): 10
-  Counter Increment Distibution: add=fixed(1)
+  Counter Increment Distribution: add=fixed(1)
 Rate:
   Auto: true
   Min Threads: 4
@@ -370,7 +370,7 @@ Node:
 Schema:
   Keyspace: keyspace1
   Replication Strategy: org.apache.cassandra.locator.SimpleStrategy
-  Replication Strategy Pptions: {replication_factor=1}
+  Replication Strategy Options: {replication_factor=1}
   Table Compression: null
   Table Compaction Strategy: null
   Table Compaction Strategy Options: {}

@@ -103,7 +103,7 @@ replicaset "pvc-8cc9c06c-ea22-11e7-9112-000c298ff5fc-ctrl-59df76689f" deleted
 PV and patches the volume deployments using the ```kubectl patch deployment``` command. 
 In each case, it verifies whether the new images have been rolled out successfully, using ```kubectl rollout status deployment```
 before proceeding to the next step. Post patching, it also deletes the orphaned replicaset of the controller deployment as a 
-woraround for this issue : https://github.com/openebs/openebs/issues/1201
+workaround for this issue : https://github.com/openebs/openebs/issues/1201
 
 
 Verify that the volume controller and replica pods are running post upgrade 
@@ -180,8 +180,8 @@ test@Master:~$ curl GET http://10.47.0.5:9501/v1/replicas | grep createTypes | j
 
 Perform the following actions if Step-4 was executed. 
 
-- Access the grafana dashboard at http://*NodeIP*:32515
-- Add the prometheus data source by giving URL as http://*NodeIP*:32514 
+- Access the grafana dashboard at `http://*NodeIP*:32515`
+- Add the prometheus data source by giving URL as `http://*NodeIP*:32514`
 - Once data source is validated, import the dashboard JSON from : 
   https://raw.githubusercontent.com/openebs/openebs/master/k8s/openebs-pg-dashboard.json
 - Access the volume stats by selecting the volume name (pvc-*) in the OpenEBS Volume dashboard

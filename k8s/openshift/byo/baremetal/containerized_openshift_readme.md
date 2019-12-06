@@ -67,7 +67,7 @@ $ yum -y install docker
 ```
 
 -Functional DNS server, with all hosts configured by appropriate domain names (Ensure nslookup of the hostnames is successful in 
- resolving the machine's IP addresses).The detailed steps can be found by going to the following link..
+ resolving the machine's IP addresses). The detailed steps can be found by going to the following link..
  (https://medium.com/@fromprasath/adding-centos-to-windows-domain-298977008f6c)
  
  ```
@@ -337,7 +337,7 @@ oc apply -f openebs-operator
 oc apply -f openebs-storageclasses.yaml
 ```
 
--After applying the operator yaml, if you see pod status is in pending state and on describing the maya-apiserver pod the the following error message is found.
+-After applying the operator yaml, if you see pod status is in pending state and on describing the maya-apiserver pod the following error message is found.
 
 ```
 [root@osnode1 ~]# oc get pods -n openebs

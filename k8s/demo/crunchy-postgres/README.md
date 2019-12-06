@@ -5,7 +5,7 @@ simple database operations to verify successful deployment.
 
 ## Crunchy-Postgres 
 
-The postgres container used in the StatefulSet is sourced from (CrunchyData)[https://github.com/CrunchyData/crunchy-containers]. CrunchyData provides cloud agnostic PostgreSQL container technology that is designed for production 
+The postgres container used in the StatefulSet is sourced from [CrunchyData](https://github.com/CrunchyData/crunchy-containers). CrunchyData provides cloud agnostic PostgreSQL container technology that is designed for production 
 workloads with cloud native High Availability, Disaster Recovery, and monitoring.  
 
 ## Prerequisite
@@ -136,7 +136,7 @@ The verification procedure can be carried out using the following steps:
 
 ### Step-1: Install the PostgreSQL-Client
 
-Install the PostgreSQL CLient Utility (psql) on any of the Kubernetes machines to perform database operations 
+Install the PostgreSQL Client Utility (psql) on any of the Kubernetes machines to perform database operations 
 from the command line. 
 
 ```
